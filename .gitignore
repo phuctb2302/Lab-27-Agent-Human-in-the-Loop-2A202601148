@@ -1,11 +1,43 @@
+# Python cache & build artifacts
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+*.pyd
+dist/
+build/
+*.egg-info/
+
+# Test & coverage
 .pytest_cache/
 .coverage
 htmlcov/
+.tox/
+
+# Environment & secrets — NEVER commit these
 .env
+.env.*
+*.env
+.envrc
+.secrets
+secrets.json
+secrets.yaml
+secrets.toml
+credentials.json
+service_account.json
+
+# Virtual environments
 .venv/
 env/
 venv/
+ENV/
+
+# Streamlit secrets
 .streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# IDE & OS
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
